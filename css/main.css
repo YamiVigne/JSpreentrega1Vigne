@@ -1,0 +1,31 @@
+.container {
+  display: grid;
+  margin: 15px auto;
+  grid-template-areas: "Header Header Header" "widget-1 Main widget-3" "widget-2 Main widget-4" "Footer Footer Footer";
+  grid-template-columns: 20% auto 20%;
+  grid-template-rows: auto auto auto auto;
+  gap: 0px 0px;
+  justify-items: center;
+  overflow: hidden; }
+  .container .Header {
+    grid-area: Header; }
+  .container .widget-1 {
+    grid-area: widget-1; }
+  .container .widget-2 {
+    grid-area: widget-2; }
+  .container .widget-3 {
+    grid-area: widget-3; }
+  .container .widget-4 {
+    grid-area: widget-4; }
+  .container .Main {
+    grid-area: Main; }
+  .container .Footer {
+    grid-area: Footer; }
+
+body {
+  background-image: linear-gradient(#BBBE64, #ffffff);
+  background-repeat: no-repeat;
+  overflow-x: hidden; }
+
+.card {
+  background-color: aqua; }

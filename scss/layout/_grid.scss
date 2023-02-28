@@ -1,0 +1,26 @@
+.container {
+  display: grid; 
+  margin: 15px auto;
+  grid-template-areas: 
+    "Header Header Header"
+    "widget-1 Main widget-3"
+    "widget-2 Main widget-4"
+    "Footer Footer Footer"; 
+  grid-template-columns: 20% auto 20%; 
+  grid-template-rows: auto auto auto auto; 
+  gap: 0px 0px; 
+  justify-items: center; 
+  overflow:hidden;
+
+  .Header { grid-area: Header; }
+  .widget-1 { grid-area: widget-1; }
+  .widget-2 { grid-area: widget-2; }
+  .widget-3 { grid-area: widget-3; }
+  .widget-4 { grid-area: widget-4; }
+  .Main { grid-area: Main; }
+  .Footer { grid-area: Footer; }
+
+}
+
+
+
