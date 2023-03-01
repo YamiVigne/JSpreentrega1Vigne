@@ -1,46 +1,55 @@
 main {
-  color: gainsboro;
   margin: 0 auto;
-  max-width: 1000px;
-  min-height: 100vh;
+  max-width: 1580px;
+  min-height: 140vh;
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 100px
-    50px
-    1fr
-    100px
-    200px;
-  grid-template-areas: 
-    "my-header my-header my-header"
-    "my-nav my-nav my-nav"
-    "my-section my-section my-section"
-    "my-aside my-aside my-aside"
-    "my-footer my-footer my-footer"
 }
 
 header {
   grid-area: my-header;
-  background-color: blueviolet;
+  color: black;
+  align-content: center;
 }
 
 nav {
   grid-area: my-nav;
-  background-color: cornflowerblue;
+  background-color: #8e5572;
+  font-size: 14px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 1.7pt;
+  word-spacing: 0.2pt;
+  line-height: 1.2;
+  padding: 5px;
+  padding: 15px;
 }
 
 aside {
   grid-area: my-aside;
-  background-color: darkmagenta;
+  background-color: #e99a71;
+  font-size: 14px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 1.7pt;
+  word-spacing: 0.2pt;
+  line-height: 1.2;
+  padding: 5px;
+  padding: 15px;
 }
 
 section {
   grid-area: my-section;
-  background-color: indigo;
+  background-color: #bfb1a8;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15px;
+  letter-spacing: 1.1pt;
+  word-spacing: 0.2pt;
+  line-height: 1.4;
+  padding: 5px;
+  padding: 15px;
 }
 
 footer {
   grid-area: my-footer;
-  background-color: darkorchid;
+  background-color: #edb497;
 }
 
 @media (min-width: 600px) and (max-width: 1000px) {
@@ -60,13 +69,32 @@ footer {
 
 @media (min-width: 1001px) {
   main {
-    grid-template-columns: 200px 1fr 200px;
-    grid-template-rows: 200px
+    grid-template-columns: 300px 1fr 300px;
+    grid-template-rows: 401px
       1fr
       100px;
     grid-template-areas:
       "my-header my-header my-header"
       "my-nav my-section my-aside"
       "my-footer my-footer my-footer"
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  align-content: center;
+}
+
+.card {
+  background: linear-gradient(to bottom left, #e99a71 40%, #8e5572 100%);;
+  border-radius: 5px;
+  box-shadow: 6px 8px 2px 1px rgba(59, 21, 21, 0.336);
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  .card_content {
+    padding: 16px;
+    background: linear-gradient(to bottom left, #b3a59c 40%, #8e5572 100%);
   }
 }
