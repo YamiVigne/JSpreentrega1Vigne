@@ -37,7 +37,7 @@ function NETFLIX(){
                 break
                         
             default:
-                alert("No eligió nada");
+                alert("No eligiste nada");
                 break
                 
         }
@@ -88,6 +88,52 @@ function SPOTIFY(){
 }
 
 function HBO(){
+
+    let planMENSUAL = 499
+    let planTRIMESTRAL = 1349
+    let planANUAL = 4299
+
+    let elegirPLAN = parseInt (
+    prompt(" " + NOMBRE + " ¿Que plan queres adquirir?: \n 1. PLAN MENSUAL \n 2. PLAN TRIMESTRAL \n 3. PLAN ANUAL")
+    );
+        switch (elegirPLAN) {
+            case 1:
+                alert("Elegiste el PLAN MENSUAL vale $499")
+                
+                const MULTI = planMENSUAL * (1 + VALOR_STREAMING) 
+                console.log(MULTI)
+
+                const FRASE = "El valor final del Plan es de $" + MULTI + " con impuestos"
+                    alert(FRASE)
+
+                break
+            
+            case 2:
+                alert("Elegiste el PLAN TRIMESTRAL vale $1349")
+                const MULTIPLICACION = planTRIMESTRAL * (1 + VALOR_STREAMING) 
+                console.log(MULTIPLICACION)
+
+                const FRASE1 = "El valor final del Plan es de $" + MULTIPLICACION + " con impuestos"
+                    alert(FRASE1)
+
+                break
+
+                
+            case 3:
+                alert("Elegiste el PLAN ANUAL vale $4299")
+                const MULTIPLI1 = planANUAL * (1 + VALOR_STREAMING) 
+                console.log(MULTIPLI1)
+
+                const FRASE2 = "El valor final del Plan es de $" + MULTIPLI1 + " con impuestos"
+                    alert(FRASE2)
+
+                break
+            
+            default:
+                alert(" " + NOMBRE + " No eligiste nada");
+                break
+                    
+        }
 
 }
    
