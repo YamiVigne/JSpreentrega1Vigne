@@ -1,3 +1,12 @@
+html {
+  height: 100%; }
+
+body {
+  background-image: url("/images/Fondo.png");
+  background-attachment: fixed;
+  background-repeat: repeat;
+  color: #eae1d4; }
+
 main {
   margin: 0 auto;
   max-width: 1580px;
@@ -11,7 +20,7 @@ header {
 
 nav {
   grid-area: my-nav;
-  background-color: #8e5572;
+  background-color: #7f201f;
   font-size: 14px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   letter-spacing: 1.7pt;
@@ -22,7 +31,7 @@ nav {
 
 aside {
   grid-area: my-aside;
-  background-color: #e99a71;
+  background-color: #f08f05;
   font-size: 14px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   letter-spacing: 1.7pt;
@@ -44,18 +53,18 @@ section {
 
 footer {
   grid-area: my-footer;
-  background-color: #edb497; }
+  background-color: #7f201f; }
 
 @media (min-width: 600px) and (max-width: 1000px) {
   main {
     grid-template-columns: 200px 1fr 200px;
-    grid-template-rows: 150px 100px 1fr 100px;
+    grid-template-rows: 150px 100px 1fr 100px;
     grid-template-areas: "my-header my-header my-header" "my-nav my-nav my-nav" "my-aside my-section my-section" "my-footer my-footer my-footer"; } }
 
 @media (min-width: 1001px) {
   main {
-    grid-template-columns: 300px 1fr 300px;
-    grid-template-rows: 401px 1fr 100px;
+    grid-template-columns: 800px 1fr;
+    grid-template-rows: 401px 1fr 100px;
     grid-template-areas: "my-header my-header my-header" "my-nav my-section my-aside" "my-footer my-footer my-footer"; } }
 
 img {
@@ -64,7 +73,7 @@ img {
   align-content: center; }
 
 .card {
-  background: linear-gradient(to bottom left, #e99a71 40%, #8e5572 100%);
+  background: linear-gradient(to bottom left, #f1d0e2 40%, #80201f 100%);
   border-radius: 5px;
   box-shadow: 6px 8px 2px 1px rgba(59, 21, 21, 0.336);
   display: flex;
@@ -72,7 +81,7 @@ img {
   overflow-x: hidden; }
   .card .card_content {
     padding: 16px;
-    background: linear-gradient(to bottom left, #b3a59c 40%, #8e5572 100%); }
+    background: linear-gradient(to bottom left, #f1d0e2 50%, #80201f 100%); }
 
 h1 {
   color: #8e5572;
